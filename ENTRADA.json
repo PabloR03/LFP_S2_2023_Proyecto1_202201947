@@ -1,4 +1,4 @@
-{ ?¿'23
+{
     "operaciones":[
         {
         "operacion":"suma",
@@ -10,7 +10,7 @@
         "valor1": 4.5,
         "valor2":[
             {
-                "operacion":"potencia", +
+                "operacion":"potencia",
                 "valor1":10,
                 "valor2":3
             }
@@ -21,7 +21,7 @@
         "valor1":[
             {
                 "operacion":"seno", 
-                "Valor1":90
+                "Valor1":0
             }
         ],
         "valor2":5.32
@@ -35,12 +35,20 @@
     "configuraciones":[
         {
             "texto":"Ejemplo: Manual De Usuario", 
-            "fondo":"naranja",
-            "fuente":"blanco",
-            "forma":"circulo"
+            "fondo":"Purple",
+            "fuente":"Blue",
+            "forma":"Box"
         }
     ] 
 }
+
+
+
+
+
+
+
+
 
 
 
