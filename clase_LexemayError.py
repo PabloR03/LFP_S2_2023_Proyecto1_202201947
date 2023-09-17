@@ -1,5 +1,5 @@
 from clase_Abstracta import Expresion
-
+#Hereda de la clase abstracta, se encarga de guardar el lexema para lo que sobre sea un error
 class palabra_Lexema(Expresion):
     def __init__(self, lexema, fila, columna):
         self.lexema = lexema
@@ -13,7 +13,7 @@ class palabra_Lexema(Expresion):
 
     def getColumna(self):
         return super().getColumna()
-
+#Escribe los errores en el archivo de salida, pero antes los almacena en una lista
 class palabra_Error(Expresion):
     def __init__(self, lexema, fila, columna):
         self.lexema = lexema

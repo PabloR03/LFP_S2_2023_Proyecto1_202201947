@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-
+#clases abstractas para que el programa pueda crear instancias de las clases hijas
 class Expresion(ABC):
     def __init__(self, fila, columna):
         self.fila = fila

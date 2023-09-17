@@ -30,7 +30,7 @@ class ventana_principal:
         op.add_command(label="ABRIR", command=self.fun_bArchivo)
         op.add_command(label="GUARDAR", command=self.fun_gArchivo)
         op.add_command(label="GUARDAD COMO", command=self.fun_gcArchivo)
-        op.add_command(label="SALIR", command=self.salir)
+
 
         # boton de analizar_Archivo
         boton_analizar=tk.Button(barra_de_opciones,text="ANALIZAR", command=self.analizar_Archivo)
@@ -117,7 +117,7 @@ class ventana_principal:
             fun_lGrafico()
             operar_()
         except:
-            messagebox.showerror("ERROR ... ", "Opcion " "Buscar / Abrir Archivo" " no seleccionada ")
+            messagebox.showerror("ERROR ... ", "Opcion " "Abrir Archivo" " no seleccionada ")
             return
         messagebox.showinfo("Exito","Archivo procesado con exito")
 
