@@ -176,6 +176,7 @@ def fun_construirNum(cadena):
         # si aun no se a terminado de leer el numero se sigue armando
         else:
             numero += char
+            # se retorna none none para que
     return None, None
 
 def operar():
@@ -204,10 +205,6 @@ def operar():
         # se arma la operacion segun sea aritmetico o trigonometrica
 
         if operacion and n1 and n2:
-            # print("Operacion===>", operacion.lexema)
-            # print("N1===>", n1.operar(None))
-            # print("N2===>", n2.operar(None))
-
             return aritmeticas(n1, n2, operacion, f'Inicio: {operacion.getFila()}: {operacion.getColumna()}', f'Fin: {n2.getFila()}:{n2.getColumna()}')
 
         elif operacion and n1 and (operacion.operar(None) == 'seno' or operacion.operar(None) == 'coseno' or operacion.operar(None) == 'tangente'):
@@ -282,16 +279,6 @@ def fun_genGrafico(nombreGrafica):
     os.system(
         f'dot -Tpdf {nombre} -o {nombreGrafica}.pdf')
 
-    # obtiene la direccion de la carpeta donde se encuentra el archivo
-    ruta = os.path.dirname(os.path.abspath(f"{nombreGrafica}.pdf"))
-
-    # la ruta del archivo es la misma que la del programa
-    archivo_pdf = ruta+f"\{nombreGrafica}.pdf"
-    #abre el archivo de salida para visualizarlo
-    path = f'file:///{archivo_pdf}'
-
-    # manda a llamar el pfd para abrirlo con el navegador predeterminado
-    webbrowser.open_new(path)
 
 def fun_deleteL():
     #se limpian las listas para que no se guarden los datos de la ejecucion anterior, es para cargar un nuevo archivo
@@ -363,5 +350,3 @@ def fun_Archivo_salida_errores():
     ruta = os.path.abspath(nombre)
     #imprime en pantalla la ruta del archivo
     print(ruta)
-    #abre el archivo de salida para visualizarlo
-    os.system(f'start notepad.exe {ruta}')

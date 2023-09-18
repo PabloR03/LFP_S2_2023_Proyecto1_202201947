@@ -31,6 +31,9 @@ class ventana_principal:
         op.add_command(label="GUARDAR", command=self.fun_gArchivo)
         op.add_command(label="GUARDAD COMO", command=self.fun_gcArchivo)
 
+        # boton de Limpiar
+        boton_limpiar=tk.Button(barra_de_opciones,text="LIMPIAR", command=self.limpiar)
+        boton_limpiar.place(x=200, y=10, width=140, height=40)
 
         # boton de analizar_Archivo
         boton_analizar=tk.Button(barra_de_opciones,text="ANALIZAR", command=self.analizar_Archivo)
@@ -120,6 +123,11 @@ class ventana_principal:
             messagebox.showerror("ERROR ... ", "Opcion " "Abrir Archivo" " no seleccionada ")
             return
         messagebox.showinfo("Exito","Archivo procesado con exito")
+    
+    def limpiar(self):
+        fun_deleteLE()
+        fun_deleteL()
+        self.cuadroTexto.delete(1.0, tk.END)
 
     def errores(self):
         #solo generar archivo de errores si ya se analizo el archivo
