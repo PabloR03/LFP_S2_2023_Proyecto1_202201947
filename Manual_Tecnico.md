@@ -35,19 +35,29 @@ Python en su versión 2.8 o posteriores (se creó bajo la versión 3.11.4), Se r
     * "errores" es una funcion que crea el archivo de salida del tipo Json, y da paso a crear el reporte que es la grafica con los datos ya hechos.
     * "reporte" es una funcion que le da paso a crear un archivo del tipo pdf que es la grafica con los datos ya hechos.
 
+![Imagen 2](https://i.ibb.co/SssQ0kv/app.png)
+
 **Clases para la ordenacion y formateo de datos**
 * Clase Abstracta:
     * Clase "Expresion" crea metodos bajo la exportacion abstract, busca que bajo un metodo iterativo archivos con el mismo requisito de datos genere y se utilice de diferente manera.
         * Metodo "operar" es una funcion que busca llamarse a si misma para ir guardando a su vez los datos que vaya almacenando cada vez que se le vaya llamando.
         * Metodo "getFila" es una funcion que en cada llamado obtiene mediante un contador (posteriormente utilizado) almacenar el numero de fila.
         * Metodo "getColumna" es una funcion que en cada llamado obtiene mediante un contador (posteriormente utilizado) almacenar el numero de columna.
+
+![Imagen 3](https://i.ibb.co/Qn6Wq3j/claseabstracra.png)
+
 * Clase Lexema y Error:
     * Clase "palabra_Lexema" crea metodos el cual es necesario para el lexema ya que su funcion es hacer operaciones matematicas es la palabra que le da una orden al programa.
     * Clase "palabra_Error" crea un formato para el archivo de errores es donde se van guardando e imprimiendo en la lista de los errores para su posterior creacion en archivo tipo json.
+
+![Imagen 4](https://i.ibb.co/sKxJmjq/lexyerror.png)
+
 * Clase Operaciones Valor, Aritmetica y Trigonometrica
     * Clase valor_Numero: Interpreta el lexema como un numero para su uso en las operaciones matematicas, tal como lo indica el archivo es el valor a tomar en cuenta.
     * Clase "trigonometricas" Usa la importacion de las clases math funciones basicas trigonometricas requeridas
     * Clase "Aritmetica" Usa la importacion de las clases math funciones basicas Aritmeticas requeridas
+
+![Imagen 5](https://i.ibb.co/Y2GrYd1/valorarittrigo.png)
 
 **Clase para el Analizador Lexico**
 * Clases para la ejecucion y funcionamiento del analizador
@@ -61,5 +71,6 @@ Python en su versión 2.8 o posteriores (se creó bajo la versión 3.11.4), Se r
     * Clases "fun_obtenerErrores" es una clase que obtiene el los datos enviado de los errores y cada caracter los envia a la clase de errores para formatearlos e imprimirlos en el archivo de salida.
     * Clase "fun_Archivo_salida_errores" es una clase que  tiene la lista de los errores y las imprime en el archivo tipo Json que el mismo crea, para abrirlo en este caso con el block de notas.
 
+![Imagen 1](https://i.ibb.co/vVmYQ9C/analizador.png)
 
 

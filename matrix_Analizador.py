@@ -279,7 +279,6 @@ def fun_genGrafico(nombreGrafica):
     os.system(
         f'dot -Tpdf {nombre} -o {nombreGrafica}.pdf')
 
-
 def fun_deleteL():
     #se limpian las listas para que no se guarden los datos de la ejecucion anterior, es para cargar un nuevo archivo
     comandos.clear()

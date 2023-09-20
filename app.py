@@ -70,7 +70,6 @@ class ventana_principal:
         except:
             messagebox.showerror("ERROR ... ", "Archivo no cargado, revise que haya seleccionado uno y que sea de tipo .Json")
             return
-    
     #Def para guardar archivo que esta en el panel de texto
     def fun_gArchivo(self):
         try:
@@ -104,7 +103,6 @@ class ventana_principal:
         except:
             messagebox.showerror("ERROR ... ", "No se puede cerrar, revise la entrada")
 
-
     def analizar_Archivo(self):
         # variable para saber si ya se presiono el boton de analizar_Archivo
         # En caso de que despues de analizar_Archivo un arhivo se analice otro se limpian las listas
@@ -123,7 +121,7 @@ class ventana_principal:
             messagebox.showerror("ERROR ... ", "Opcion " "Abrir Archivo" " no seleccionada ")
             return
         messagebox.showinfo("Exito","Archivo procesado con exito")
-    
+
     def limpiar(self):
         fun_deleteLE()
         fun_deleteL()
@@ -144,7 +142,6 @@ class ventana_principal:
             messagebox.showerror("ERROR ... ", "No se pudo generar Archivo de errores")
             return
 
-
     def reporte(self):
         #solo generar reporte si ya se analizo el archivo
         if (self.archivo_analizado == False):
@@ -157,8 +154,6 @@ class ventana_principal:
         except:
             messagebox.showerror("ERROR ... ", "No se pudo generar Archivo de Reporte")
             return
-        
-
 
 if __name__ == "__main__":
     root = tk.Tk()
