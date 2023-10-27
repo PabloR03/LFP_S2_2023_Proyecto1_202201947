@@ -54,6 +54,13 @@ class trigonometricas(Expresion):
             resultado = round(resultado, 2)
 
             return resultado
+        
+        
+        elif self.tipo.operar(arbol) == 'inverso':
+
+            resultado = 1/leftValue
+
+            return resultado
 
         else:
             return None
@@ -127,12 +134,6 @@ class aritmeticas(Expresion):
         elif self.tipo.operar(arbol) == 'raiz':
 
             resultado = leftValue ** (1/rightValue)
-
-            return resultado
-
-        elif self.tipo.operar(arbol) == 'inverso':
-
-            resultado = 1/leftValue
 
             return resultado
 

@@ -1,4 +1,40 @@
 {
 	"errores":[
+	{
+		"error no.":1,
+		"descripcion":{
+			"lexema de error": "+",
+			"tipo": "error lexico",
+			"columna": 2,
+			"fila": 1
+		}
+	},
+	{
+		"error no.":2,
+		"descripcion":{
+			"lexema de error": "*",
+			"tipo": "error lexico",
+			"columna": 10,
+			"fila": 8
+		}
+	},
+	{
+		"error no.":3,
+		"descripcion":{
+			"lexema de error": "*",
+			"tipo": "error lexico",
+			"columna": 10,
+			"fila": 23
+		}
+	},
+	{
+		"error no.":4,
+		"descripcion":{
+			"lexema de error": "*",
+			"tipo": "error lexico",
+			"columna": 24,
+			"fila": 47
+		}
+	}
 	]
 }
